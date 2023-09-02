@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'account',
+    'music',
+    'feedback',
 ]
 
 MIDDLEWARE = [
@@ -131,7 +133,7 @@ AUTH_USER_MODEL = "account.User"
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'User.authentications.MyUserBackend',
+    'account.authentication.MyUserBackend',
 ]
 
 MESSAGE_TAGS = {
