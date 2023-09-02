@@ -20,3 +20,19 @@ class User(BaseUserModel):
     email = models.EmailField(_("email address"), null=True, blank=True)
     account_type = models.CharField(max_length=20, choices=(("N", "Normal"), ("V", "VIP")))
     
+
+class Band(models.Model):
+    name = models.CharField(max_length=50)
+
+class Artist(models.Model):
+    first_name = models.CharField(_("Artist first name"), max_length=50)
+    last_name = models.CharField(_("Artist last name"), max_length=50)
+    bio = models.TextField(null=True, blank=True)
+    image = models.ImageField(_("Artist Image"), upload_to='Artists/images')
+    band = models.ForeignKey(Band, null=True, on_delete=models.SET_NULL)
+
+    @property
+    def full_name(self):
+        return self.first_name + " " + self.last_name
+
+
