@@ -7,7 +7,7 @@ class BaseManager(models.Manager):
         """
         same as get_queryset but fitering logical deleted items
         """
-        return super().get_query_set().filter(is_deleted=False)
+        return super().get_queryset().filter(is_deleted=False)
 
     def get_deleted_list(self):
         """
