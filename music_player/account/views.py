@@ -32,3 +32,36 @@ class Register(CreateView):
         # message = f"Hey {user.get_full_name()}/n/t you registered in MusiTo successfully."
         # user.email_user("Registered successfully", message)
         return redirect(reverse_lazy('music:home'))
+
+
+class Login(FormView):
+    form_class = UserLoginForm
+    template_name = 'account/login_page.html'
+    success_url = reverse_lazy('music:home')
+
+    def dispatch(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            print("it's login")
+            return redirect(reverse_lazy('music:home'))
+        return super().dispatch(request, *args, **kwargs)
+    
+    def form_valid(self, form):
+        cd = form.cleaned_data.copy()
+        user = authenticate(self.request, username=cd['username'], password=cd['password'])
+        if User.objects.filter(Q(email=cd['username'])|Q(username=cd['username'])):
+            if user:
+                print('user exist')
+                login(self.request, user, 'account.authentication.MyUserBackend')
+                print('login view: user is logged in')
+                # message = f"Hey {user.get_full_name()}/n/t you registered in MusiTo successfully."
+                # user.email_user("Registered successfully", message)
+                return super().form_valid(form)
+            form.add_error("password", "Incorrect Password! ")
+            return super().form_invalid(form)
+        form.add_error("username", "Username or Email not found! ")
+        return super().form_invalid(form)
+
+
+def logout_user(request):
+    logout(request)
+    return redirect(reverse_lazy('account:login'))
