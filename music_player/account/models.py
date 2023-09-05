@@ -15,19 +15,28 @@ class User(AbstractUser):
         if self.image:
             return mark_safe(f'<img src = "{self.image.url}" width = "150" height="150"/> ')
 
+    def __str__(self):
+        return self.get_full_name()
+
 
 class Band(models.Model):
     name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
 
 class Artist(models.Model):
     first_name = models.CharField(_("Artist first name"), max_length=50)
     last_name = models.CharField(_("Artist last name"), max_length=50)
     bio = models.TextField(null=True, blank=True)
-    image = models.ImageField(_("Artist Image"), upload_to='Artists/images')
-    band = models.ForeignKey(Band, null=True, on_delete=models.SET_NULL)
+    image = models.ImageField(_("Artist Image"), upload_to='Artists/images', null=True, blank=True)
+    band = models.ForeignKey(Band, null=True, blank=True, on_delete=models.SET_NULL)
 
     @property
     def full_name(self):
-        return self.first_name + " " + self.last_name
+        return self.first_name.capitalize() + " " + self.last_name.capitalize()
+
+    def __str__(self):
+        return self.full_name
 
 
