@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% comment %} In the name of GOD {% endcomment %}
+{% load static %}
+
 
 <!DOCTYPE html>
 
@@ -33,6 +35,11 @@
                 <div class="col-sm-10 d-flex justify-content-center align-1items-center py-3">
                     <div class="col-sm-6 d-flex justify-content-center px-1">
                         <input class="col-sm-12  btn btn-dark" type='submit' value='Submit' >
+                    </div>
+                </div>
+                <div class="col-sm-10 d-flex justify-content-center align-1items-center py-3">
+                    <div class="col-sm-6 d-flex justify-content-center px-1">
+                        <p class="col-sm-12  text-center">Don't have account? <a href="{% url 'account:register' %}">Register <i class="bi bi-person-lines-fill"></i></a></p>
                     </div>
                 </div>
             </div>
