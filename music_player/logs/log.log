@@ -1,0 +1,2040 @@
+INFO 2023-09-04 10:44:32,617 autoreload 11708 24444 Watching for file changes with StatReloader
+WARNING 2023-09-04 10:46:49,607 log 11708 22380 Not Found: /
+INFO 2023-09-04 10:47:55,705 autoreload 11708 24444 C:\Users\Lenovo\Desktop\Music_player\music_player\music_player\settings.py changed, reloading.
+INFO 2023-09-04 10:47:56,233 autoreload 2148 14396 Watching for file changes with StatReloader
+INFO 2023-09-04 10:48:01,717 autoreload 2148 14396 C:\Users\Lenovo\Desktop\Music_player\music_player\music_player\settings.py changed, reloading.
+INFO 2023-09-04 10:48:02,266 autoreload 14996 23816 Watching for file changes with StatReloader
+INFO 2023-09-04 10:48:04,648 autoreload 14996 23816 C:\Users\Lenovo\Desktop\Music_player\music_player\music_player\settings.py changed, reloading.
+INFO 2023-09-04 10:48:05,256 autoreload 24000 23396 Watching for file changes with StatReloader
+INFO 2023-09-04 10:48:09,687 autoreload 24000 23396 C:\Users\Lenovo\Desktop\Music_player\music_player\music_player\settings.py changed, reloading.
+INFO 2023-09-04 10:48:10,227 autoreload 25056 18068 Watching for file changes with StatReloader
+INFO 2023-09-04 10:48:11,618 autoreload 25056 18068 C:\Users\Lenovo\Desktop\Music_player\music_player\music_player\settings.py changed, reloading.
+INFO 2023-09-04 10:48:12,132 autoreload 9736 9512 Watching for file changes with StatReloader
+INFO 2023-09-04 10:48:23,769 autoreload 9736 9512 C:\Users\Lenovo\Desktop\Music_player\music_player\music_player\urls.py changed, reloading.
+INFO 2023-09-04 10:48:24,296 autoreload 4904 19968 Watching for file changes with StatReloader
+INFO 2023-09-04 10:49:26,166 autoreload 4904 19968 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 10:49:26,720 autoreload 18116 19824 Watching for file changes with StatReloader
+ERROR 2023-09-04 10:52:08,429 log 18116 7440 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: '{%'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: '{%'. Did you forget to register or load this tag?
+ERROR 2023-09-04 10:52:20,209 log 18116 7440 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'base.html'> must be the first tag in the template.
+ERROR 2023-09-04 10:53:03,851 log 18116 7440 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+INFO 2023-09-04 10:59:03,884 autoreload 18116 19824 C:\Users\Lenovo\Desktop\Music_player\music_player\music_player\settings.py changed, reloading.
+INFO 2023-09-04 10:59:04,551 autoreload 12480 5032 Watching for file changes with StatReloader
+INFO 2023-09-04 11:16:07,687 autoreload 12480 5032 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:16:08,245 autoreload 18472 21164 Watching for file changes with StatReloader
+INFO 2023-09-04 11:16:11,712 autoreload 18472 21164 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:16:12,256 autoreload 19608 20392 Watching for file changes with StatReloader
+INFO 2023-09-04 11:16:18,788 autoreload 19608 20392 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:16:19,337 autoreload 7408 25020 Watching for file changes with StatReloader
+INFO 2023-09-04 11:16:24,819 autoreload 7408 25020 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:16:25,346 autoreload 4696 25432 Watching for file changes with StatReloader
+INFO 2023-09-04 11:16:29,616 autoreload 4696 25432 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:16:30,193 autoreload 2196 25584 Watching for file changes with StatReloader
+INFO 2023-09-04 11:16:31,404 autoreload 2196 25584 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:16:31,941 autoreload 11848 1524 Watching for file changes with StatReloader
+INFO 2023-09-04 11:16:57,783 autoreload 11848 1524 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:16:58,327 autoreload 25476 25220 Watching for file changes with StatReloader
+INFO 2023-09-04 11:17:01,843 autoreload 25476 25220 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:17:02,388 autoreload 21068 17420 Watching for file changes with StatReloader
+INFO 2023-09-04 11:17:21,217 autoreload 21068 17420 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:17:21,725 autoreload 11444 13420 Watching for file changes with StatReloader
+INFO 2023-09-04 11:17:33,435 autoreload 11444 13420 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:17:33,934 autoreload 10800 25212 Watching for file changes with StatReloader
+INFO 2023-09-04 11:17:46,636 autoreload 10800 25212 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:17:47,170 autoreload 25232 19120 Watching for file changes with StatReloader
+INFO 2023-09-04 11:17:55,748 autoreload 25232 19120 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:17:56,333 autoreload 14852 19868 Watching for file changes with StatReloader
+INFO 2023-09-04 11:17:59,815 autoreload 14852 19868 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:18:00,366 autoreload 18324 11540 Watching for file changes with StatReloader
+INFO 2023-09-04 11:18:10,005 autoreload 18324 11540 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:18:10,530 autoreload 6072 25060 Watching for file changes with StatReloader
+INFO 2023-09-04 11:18:13,966 autoreload 6072 25060 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:18:14,469 autoreload 9900 9168 Watching for file changes with StatReloader
+INFO 2023-09-04 11:18:16,837 autoreload 9900 9168 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:18:17,414 autoreload 15560 15196 Watching for file changes with StatReloader
+INFO 2023-09-04 11:18:28,039 autoreload 15560 15196 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:18:28,548 autoreload 24872 3052 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:14,200 autoreload 24872 3052 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:14,728 autoreload 21076 18788 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:18,173 autoreload 21076 18788 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:18,677 autoreload 21836 24364 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:22,098 autoreload 21836 24364 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:22,633 autoreload 18588 10736 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:23,838 autoreload 18588 10736 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:24,349 autoreload 10124 6760 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:26,578 autoreload 10124 6760 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:27,084 autoreload 7384 16840 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:28,267 autoreload 7384 16840 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:28,791 autoreload 14512 11200 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:29,974 autoreload 14512 11200 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:30,487 autoreload 22812 13348 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:34,788 autoreload 22812 13348 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:35,292 autoreload 21524 9312 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:45,726 autoreload 21524 9312 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:46,214 autoreload 18228 19796 Watching for file changes with StatReloader
+INFO 2023-09-04 11:19:48,441 autoreload 18228 19796 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:19:48,922 autoreload 12572 21536 Watching for file changes with StatReloader
+INFO 2023-09-04 11:20:23,991 autoreload 12572 21536 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:20:24,533 autoreload 15528 19620 Watching for file changes with StatReloader
+INFO 2023-09-04 11:20:28,805 autoreload 15528 19620 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:20:29,320 autoreload 12852 18748 Watching for file changes with StatReloader
+INFO 2023-09-04 11:20:30,535 autoreload 12852 18748 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:20:31,036 autoreload 24732 25300 Watching for file changes with StatReloader
+INFO 2023-09-04 11:21:11,211 autoreload 24732 25300 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:21:11,745 autoreload 18512 22656 Watching for file changes with StatReloader
+INFO 2023-09-04 11:21:12,955 autoreload 18512 22656 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:21:13,482 autoreload 19896 9232 Watching for file changes with StatReloader
+INFO 2023-09-04 11:21:14,677 autoreload 19896 9232 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:21:15,280 autoreload 19064 7884 Watching for file changes with StatReloader
+INFO 2023-09-04 11:21:21,650 autoreload 19064 7884 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:21:22,199 autoreload 24864 13992 Watching for file changes with StatReloader
+INFO 2023-09-04 11:21:23,393 autoreload 24864 13992 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:21:23,909 autoreload 14856 15704 Watching for file changes with StatReloader
+INFO 2023-09-04 11:21:25,104 autoreload 14856 15704 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:21:25,636 autoreload 19928 7880 Watching for file changes with StatReloader
+INFO 2023-09-04 11:21:28,855 autoreload 19928 7880 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:21:29,535 autoreload 18796 24176 Watching for file changes with StatReloader
+INFO 2023-09-04 11:21:56,335 autoreload 18796 24176 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:21:56,955 autoreload 24976 23736 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:01,225 autoreload 24976 23736 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:01,767 autoreload 23368 2116 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:05,026 autoreload 23368 2116 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:05,592 autoreload 2316 13800 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:06,779 autoreload 2316 13800 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:07,332 autoreload 18832 17684 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:08,531 autoreload 18832 17684 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:09,035 autoreload 22716 24944 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:10,245 autoreload 22716 24944 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:10,757 autoreload 25036 12652 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:13,155 autoreload 25036 12652 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:13,690 autoreload 23544 21652 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:15,058 autoreload 23544 21652 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:15,543 autoreload 8144 24696 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:17,918 autoreload 8144 24696 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:18,456 autoreload 18572 21188 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:20,687 autoreload 18572 21188 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:21,205 autoreload 18836 3296 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:23,432 autoreload 18836 3296 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:23,951 autoreload 13788 25272 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:28,445 autoreload 13788 25272 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:28,995 autoreload 20684 16996 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:31,200 autoreload 20684 16996 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:31,690 autoreload 15832 19528 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:40,064 autoreload 15832 19528 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:40,582 autoreload 13096 20128 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:53,033 autoreload 13096 20128 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:53,545 autoreload 6288 18464 Watching for file changes with StatReloader
+INFO 2023-09-04 11:22:58,844 autoreload 6288 18464 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:22:59,336 autoreload 6852 18416 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:03,613 autoreload 6852 18416 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:04,106 autoreload 24084 18040 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:07,343 autoreload 24084 18040 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:07,877 autoreload 24184 18928 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:11,113 autoreload 24184 18928 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:11,672 autoreload 23200 21992 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:12,862 autoreload 23200 21992 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:13,385 autoreload 21396 20960 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:17,648 autoreload 21396 20960 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:18,157 autoreload 13816 17828 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:24,631 autoreload 13816 17828 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:25,138 autoreload 8236 24648 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:27,374 autoreload 8236 24648 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:27,886 autoreload 4696 16816 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:31,120 autoreload 4696 16816 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:31,619 autoreload 7440 14108 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:45,162 autoreload 7440 14108 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:45,677 autoreload 8156 14488 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:48,925 autoreload 8156 14488 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:49,421 autoreload 9236 21588 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:52,708 autoreload 9236 21588 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:53,216 autoreload 23092 23612 Watching for file changes with StatReloader
+INFO 2023-09-04 11:23:56,464 autoreload 23092 23612 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:23:57,017 autoreload 14304 13940 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:05,367 autoreload 14304 13940 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:05,879 autoreload 24252 17412 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:23,525 autoreload 24252 17412 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:24,030 autoreload 23712 20604 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:26,237 autoreload 23712 20604 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:26,737 autoreload 8224 9148 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:36,166 autoreload 8224 9148 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:36,671 autoreload 10920 20664 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:37,864 autoreload 10920 20664 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:38,398 autoreload 14732 20800 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:40,600 autoreload 14732 20800 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:41,145 autoreload 25160 15492 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:45,421 autoreload 25160 15492 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:45,987 autoreload 6708 24076 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:47,205 autoreload 6708 24076 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:47,701 autoreload 25460 16564 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:49,938 autoreload 25460 16564 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:50,454 autoreload 11904 6352 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:51,651 autoreload 11904 6352 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:52,166 autoreload 1360 23024 Watching for file changes with StatReloader
+INFO 2023-09-04 11:24:53,354 autoreload 1360 23024 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:24:53,861 autoreload 5216 4644 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:19,680 autoreload 5216 4644 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:20,234 autoreload 188 24820 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:29,637 autoreload 188 24820 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:30,221 autoreload 24332 23424 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:32,435 autoreload 24332 23424 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:32,947 autoreload 21332 14952 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:35,178 autoreload 21332 14952 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:35,665 autoreload 19148 20176 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:37,885 autoreload 19148 20176 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:38,417 autoreload 17640 9660 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:39,617 autoreload 17640 9660 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:40,116 autoreload 7376 11612 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:41,311 autoreload 7376 11612 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:41,834 autoreload 24644 8768 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:47,117 autoreload 24644 8768 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:47,623 autoreload 2012 1252 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:48,816 autoreload 2012 1252 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:49,330 autoreload 16232 20300 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:51,571 autoreload 16232 20300 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:52,085 autoreload 6268 4524 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:55,369 autoreload 6268 4524 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:55,851 autoreload 25588 3504 Watching for file changes with StatReloader
+INFO 2023-09-04 11:25:57,027 autoreload 25588 3504 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:25:57,566 autoreload 22056 16828 Watching for file changes with StatReloader
+INFO 2023-09-04 11:26:02,831 autoreload 22056 16828 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:26:03,337 autoreload 17980 14852 Watching for file changes with StatReloader
+INFO 2023-09-04 11:26:09,680 autoreload 17980 14852 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:26:10,179 autoreload 23720 25596 Watching for file changes with StatReloader
+INFO 2023-09-04 11:26:12,396 autoreload 23720 25596 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:26:12,923 autoreload 7044 1444 Watching for file changes with StatReloader
+INFO 2023-09-04 11:26:15,136 autoreload 7044 1444 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:26:15,662 autoreload 17592 17724 Watching for file changes with StatReloader
+INFO 2023-09-04 11:26:23,022 autoreload 17592 17724 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:26:23,530 autoreload 1424 21372 Watching for file changes with StatReloader
+INFO 2023-09-04 11:26:26,776 autoreload 1424 21372 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:26:27,297 autoreload 17280 11132 Watching for file changes with StatReloader
+INFO 2023-09-04 11:26:28,480 autoreload 17280 11132 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:26:29,018 autoreload 13144 13728 Watching for file changes with StatReloader
+INFO 2023-09-04 11:26:30,218 autoreload 13144 13728 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:26:30,725 autoreload 10724 21548 Watching for file changes with StatReloader
+INFO 2023-09-04 11:26:31,935 autoreload 10724 21548 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:26:32,469 autoreload 24080 21948 Watching for file changes with StatReloader
+INFO 2023-09-04 11:27:41,395 autoreload 24080 21948 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:27:41,912 autoreload 10684 20312 Watching for file changes with StatReloader
+INFO 2023-09-04 11:27:46,189 autoreload 10684 20312 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:27:46,740 autoreload 25148 20244 Watching for file changes with StatReloader
+INFO 2023-09-04 11:27:49,968 autoreload 25148 20244 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:27:50,485 autoreload 2344 404 Watching for file changes with StatReloader
+INFO 2023-09-04 11:27:51,686 autoreload 2344 404 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:27:52,174 autoreload 13696 17412 Watching for file changes with StatReloader
+INFO 2023-09-04 11:27:54,386 autoreload 13696 17412 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:27:54,926 autoreload 7244 7444 Watching for file changes with StatReloader
+INFO 2023-09-04 11:27:57,154 autoreload 7244 7444 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:27:57,791 autoreload 9272 20476 Watching for file changes with StatReloader
+INFO 2023-09-04 11:28:02,080 autoreload 9272 20476 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:28:02,602 autoreload 4872 13728 Watching for file changes with StatReloader
+INFO 2023-09-04 11:28:07,902 autoreload 4872 13728 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:28:08,436 autoreload 15760 20548 Watching for file changes with StatReloader
+INFO 2023-09-04 11:28:19,887 autoreload 15760 20548 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:28:20,396 autoreload 19696 15944 Watching for file changes with StatReloader
+INFO 2023-09-04 11:28:25,674 autoreload 19696 15944 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:28:26,176 autoreload 12556 16684 Watching for file changes with StatReloader
+INFO 2023-09-04 11:28:27,363 autoreload 12556 16684 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:28:27,868 autoreload 23820 21740 Watching for file changes with StatReloader
+INFO 2023-09-04 11:28:54,664 autoreload 23820 21740 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:28:55,167 autoreload 7972 12592 Watching for file changes with StatReloader
+INFO 2023-09-04 11:28:57,403 autoreload 7972 12592 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:28:57,922 autoreload 14700 25436 Watching for file changes with StatReloader
+INFO 2023-09-04 11:28:59,135 autoreload 14700 25436 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:28:59,632 autoreload 16056 22648 Watching for file changes with StatReloader
+INFO 2023-09-04 11:29:00,846 autoreload 16056 22648 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:29:01,333 autoreload 25356 14568 Watching for file changes with StatReloader
+INFO 2023-09-04 11:29:02,516 autoreload 25356 14568 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:29:03,079 autoreload 13860 21956 Watching for file changes with StatReloader
+INFO 2023-09-04 11:29:13,485 autoreload 13860 21956 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:29:14,017 autoreload 15588 4668 Watching for file changes with StatReloader
+INFO 2023-09-04 11:29:23,431 autoreload 15588 4668 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:29:23,947 autoreload 16200 6484 Watching for file changes with StatReloader
+INFO 2023-09-04 11:29:27,205 autoreload 16200 6484 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:29:27,706 autoreload 344 23620 Watching for file changes with StatReloader
+INFO 2023-09-04 11:30:01,764 autoreload 344 23620 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:30:02,265 autoreload 21536 22748 Watching for file changes with StatReloader
+INFO 2023-09-04 11:30:09,823 autoreload 21536 22748 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:30:10,352 autoreload 14880 23280 Watching for file changes with StatReloader
+INFO 2023-09-04 11:30:11,746 autoreload 14880 23280 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:30:12,245 autoreload 7408 3508 Watching for file changes with StatReloader
+INFO 2023-09-04 11:30:13,599 autoreload 7408 3508 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:30:14,139 autoreload 18076 24000 Watching for file changes with StatReloader
+INFO 2023-09-04 11:35:03,737 autoreload 18076 24000 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:35:04,259 autoreload 22272 25148 Watching for file changes with StatReloader
+INFO 2023-09-04 11:35:19,018 autoreload 22272 25148 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 11:35:19,551 autoreload 21372 11096 Watching for file changes with StatReloader
+INFO 2023-09-04 11:35:27,921 autoreload 21372 11096 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 11:35:28,421 autoreload 24536 17008 Watching for file changes with StatReloader
+INFO 2023-09-04 11:35:31,638 autoreload 24536 17008 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 11:35:32,135 autoreload 8416 8860 Watching for file changes with StatReloader
+INFO 2023-09-04 11:35:33,314 autoreload 8416 8860 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 11:35:33,826 autoreload 10640 8916 Watching for file changes with StatReloader
+INFO 2023-09-04 11:35:40,163 autoreload 10640 8916 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 11:35:40,745 autoreload 24844 24260 Watching for file changes with StatReloader
+INFO 2023-09-04 11:35:52,150 autoreload 24844 24260 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 11:35:52,661 autoreload 4632 23396 Watching for file changes with StatReloader
+ERROR 2023-09-04 11:36:27,002 log 4632 6316 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 57, in form_valid
+    user = authenticate(self.request, cd['username'], cd['password'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: authenticate() takes from 0 to 1 positional arguments but 3 were given
+INFO 2023-09-04 11:38:53,056 autoreload 4632 23396 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:38:53,589 autoreload 17708 19684 Watching for file changes with StatReloader
+INFO 2023-09-04 11:38:57,022 autoreload 17708 19684 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:38:57,554 autoreload 23036 7612 Watching for file changes with StatReloader
+INFO 2023-09-04 11:38:58,740 autoreload 23036 7612 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:38:59,275 autoreload 14140 9344 Watching for file changes with StatReloader
+INFO 2023-09-04 11:39:00,645 autoreload 14140 9344 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:39:01,182 autoreload 2948 14644 Watching for file changes with StatReloader
+INFO 2023-09-04 11:39:02,542 autoreload 2948 14644 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:39:03,075 autoreload 5384 25256 Watching for file changes with StatReloader
+INFO 2023-09-04 11:39:05,484 autoreload 5384 25256 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:39:06,015 autoreload 7024 11976 Watching for file changes with StatReloader
+INFO 2023-09-04 11:39:09,433 autoreload 7024 11976 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:39:10,027 autoreload 19544 22992 Watching for file changes with StatReloader
+INFO 2023-09-04 11:39:11,413 autoreload 19544 22992 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:39:11,918 autoreload 4732 21808 Watching for file changes with StatReloader
+INFO 2023-09-04 11:39:37,980 autoreload 4732 21808 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:39:38,478 autoreload 17296 21396 Watching for file changes with StatReloader
+INFO 2023-09-04 11:39:49,612 autoreload 17296 21396 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:39:50,145 autoreload 15076 4180 Watching for file changes with StatReloader
+INFO 2023-09-04 11:39:51,513 autoreload 15076 4180 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:39:52,075 autoreload 21632 21780 Watching for file changes with StatReloader
+INFO 2023-09-04 11:39:59,426 autoreload 21632 21780 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 11:39:59,968 autoreload 1228 24320 Watching for file changes with StatReloader
+INFO 2023-09-04 11:44:01,549 autoreload 1228 24320 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:44:02,167 autoreload 22440 21444 Watching for file changes with StatReloader
+INFO 2023-09-04 11:44:29,182 autoreload 24952 21428 Watching for file changes with StatReloader
+INFO 2023-09-04 11:45:01,537 autoreload 24952 21428 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:45:02,049 autoreload 12020 21332 Watching for file changes with StatReloader
+INFO 2023-09-04 11:45:08,614 autoreload 12020 21332 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:45:09,195 autoreload 8620 5784 Watching for file changes with StatReloader
+INFO 2023-09-04 11:45:41,187 autoreload 19424 25336 Watching for file changes with StatReloader
+INFO 2023-09-04 11:46:09,444 autoreload 19424 25336 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:46:10,020 autoreload 12100 25428 Watching for file changes with StatReloader
+INFO 2023-09-04 11:46:15,550 autoreload 12100 25428 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:46:16,074 autoreload 21028 25584 Watching for file changes with StatReloader
+INFO 2023-09-04 11:49:49,188 autoreload 21028 25584 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:49:49,733 autoreload 1780 14664 Watching for file changes with StatReloader
+INFO 2023-09-04 11:49:59,374 autoreload 1780 14664 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:49:59,903 autoreload 13436 14468 Watching for file changes with StatReloader
+INFO 2023-09-04 11:50:09,655 autoreload 13436 14468 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:50:10,179 autoreload 10588 13416 Watching for file changes with StatReloader
+INFO 2023-09-04 11:57:42,935 autoreload 10588 13416 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:57:43,520 autoreload 20692 13012 Watching for file changes with StatReloader
+INFO 2023-09-04 11:57:44,737 autoreload 20692 13012 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:57:45,285 autoreload 15592 9404 Watching for file changes with StatReloader
+INFO 2023-09-04 11:58:13,183 autoreload 15592 9404 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:58:13,682 autoreload 4684 17952 Watching for file changes with StatReloader
+INFO 2023-09-04 11:58:16,975 autoreload 4684 17952 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:58:17,509 autoreload 15528 25008 Watching for file changes with StatReloader
+INFO 2023-09-04 11:58:29,958 autoreload 15528 25008 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:58:30,507 autoreload 18736 10600 Watching for file changes with StatReloader
+INFO 2023-09-04 11:58:43,040 autoreload 18736 10600 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:58:43,570 autoreload 828 19896 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:14,801 autoreload 828 19896 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:15,318 autoreload 21640 16544 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:21,867 autoreload 21640 16544 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:22,435 autoreload 22196 21580 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:24,889 autoreload 22196 21580 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:25,444 autoreload 17708 10396 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:27,838 autoreload 17708 10396 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:28,350 autoreload 20040 11292 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:37,979 autoreload 20040 11292 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:38,525 autoreload 24656 22112 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:40,746 autoreload 24656 22112 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:41,268 autoreload 14300 3968 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:42,488 autoreload 14300 3968 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:42,998 autoreload 19856 21044 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:44,198 autoreload 19856 21044 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:44,749 autoreload 22360 12156 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:46,975 autoreload 22360 12156 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:47,480 autoreload 13640 11108 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:48,711 autoreload 13640 11108 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:49,222 autoreload 6036 14880 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:54,554 autoreload 6036 14880 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:55,078 autoreload 14532 14064 Watching for file changes with StatReloader
+INFO 2023-09-04 11:59:59,336 autoreload 14532 14064 C:\Users\Lenovo\Desktop\Music_player\music_player\account\forms.py changed, reloading.
+INFO 2023-09-04 11:59:59,896 autoreload 18416 18228 Watching for file changes with StatReloader
+INFO 2023-09-04 14:10:58,777 autoreload 18416 18228 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:10:59,326 autoreload 25236 19504 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:04,190 autoreload 25236 19504 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:04,729 autoreload 15160 19248 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:07,131 autoreload 15160 19248 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:07,717 autoreload 6244 20244 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:13,208 autoreload 6244 20244 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:13,750 autoreload 9816 6852 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:14,999 autoreload 9816 6852 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:15,539 autoreload 14080 9720 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:16,745 autoreload 14080 9720 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:17,271 autoreload 17500 20860 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:18,477 autoreload 17500 20860 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:19,442 autoreload 18272 9936 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:21,686 autoreload 18272 9936 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:22,214 autoreload 9732 19064 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:25,438 autoreload 9732 19064 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:26,001 autoreload 19340 10168 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:29,235 autoreload 19340 10168 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:29,798 autoreload 12528 1668 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:30,986 autoreload 12528 1668 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:31,516 autoreload 15452 24648 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:34,729 autoreload 15452 24648 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:35,246 autoreload 9124 9828 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:37,454 autoreload 9124 9828 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:37,979 autoreload 19060 11976 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:43,239 autoreload 19060 11976 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:43,845 autoreload 22136 24412 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:47,082 autoreload 22136 24412 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:47,616 autoreload 8668 15472 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:49,032 autoreload 8668 15472 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:49,565 autoreload 13284 24560 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:50,971 autoreload 13284 24560 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:51,502 autoreload 14692 22388 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:52,898 autoreload 14692 22388 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:53,424 autoreload 21932 2036 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:57,860 autoreload 21932 2036 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:12:58,382 autoreload 25068 24448 Watching for file changes with StatReloader
+INFO 2023-09-04 14:12:59,816 autoreload 25068 24448 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:00,358 autoreload 14576 5812 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:01,743 autoreload 14576 5812 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:02,270 autoreload 23648 1812 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:05,742 autoreload 23648 1812 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:06,284 autoreload 9672 18308 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:09,710 autoreload 9672 18308 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:10,285 autoreload 17268 23796 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:11,724 autoreload 17268 23796 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:12,275 autoreload 23304 4456 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:13,703 autoreload 23304 4456 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:14,270 autoreload 2300 21152 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:15,677 autoreload 2300 21152 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:16,242 autoreload 6784 19264 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:23,749 autoreload 6784 19264 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:24,291 autoreload 20680 24704 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:25,670 autoreload 20680 24704 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:26,194 autoreload 11412 10984 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:29,656 autoreload 11412 10984 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:13:30,279 autoreload 17012 23888 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:41,909 autoreload 17012 23888 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:13:42,454 autoreload 8420 15308 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:46,722 autoreload 8420 15308 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:13:47,308 autoreload 1136 2972 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:48,499 autoreload 1136 2972 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:13:49,033 autoreload 24932 23928 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:52,282 autoreload 24932 23928 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:13:52,801 autoreload 11660 14404 Watching for file changes with StatReloader
+INFO 2023-09-04 14:13:55,012 autoreload 11660 14404 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:13:55,641 autoreload 3272 4632 Watching for file changes with StatReloader
+INFO 2023-09-04 14:14:04,224 autoreload 3272 4632 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:14:04,738 autoreload 24648 15452 Watching for file changes with StatReloader
+INFO 2023-09-04 14:14:10,019 autoreload 24648 15452 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:14:10,558 autoreload 10244 21832 Watching for file changes with StatReloader
+INFO 2023-09-04 14:14:12,791 autoreload 10244 21832 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:14:13,398 autoreload 17288 23988 Watching for file changes with StatReloader
+INFO 2023-09-04 14:14:42,100 autoreload 17288 23988 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:14:42,658 autoreload 12876 18588 Watching for file changes with StatReloader
+WARNING 2023-09-04 14:14:45,127 log 12876 2564 Not Found: /logout
+WARNING 2023-09-04 14:15:10,346 log 12876 2564 Not Found: /logout
+ERROR 2023-09-04 14:15:20,755 log 12876 2196 Internal Server Error: /account/logout/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 73, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 73, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 73, in logout
+    logout(request)
+  [Previous line repeated 959 more times]
+RecursionError: maximum recursion depth exceeded
+INFO 2023-09-04 14:16:34,647 autoreload 12876 18588 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:16:35,159 autoreload 18716 9796 Watching for file changes with StatReloader
+INFO 2023-09-04 14:16:38,591 autoreload 18716 9796 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:16:39,095 autoreload 23588 11956 Watching for file changes with StatReloader
+INFO 2023-09-04 14:16:41,496 autoreload 23588 11956 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:16:42,096 autoreload 3884 23388 Watching for file changes with StatReloader
+INFO 2023-09-04 14:16:45,541 autoreload 3884 23388 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:16:46,117 autoreload 25492 11316 Watching for file changes with StatReloader
+INFO 2023-09-04 14:16:47,513 autoreload 25492 11316 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:16:48,063 autoreload 16708 24908 Watching for file changes with StatReloader
+INFO 2023-09-04 14:16:50,485 autoreload 16708 24908 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:16:51,031 autoreload 6888 7080 Watching for file changes with StatReloader
+INFO 2023-09-04 14:16:55,287 autoreload 6888 7080 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:16:55,866 autoreload 16804 22432 Watching for file changes with StatReloader
+INFO 2023-09-04 14:16:57,105 autoreload 16804 22432 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:16:57,698 autoreload 21332 1572 Watching for file changes with StatReloader
+INFO 2023-09-04 14:17:00,951 autoreload 21332 1572 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:17:01,542 autoreload 25068 24448 Watching for file changes with StatReloader
+ERROR 2023-09-04 14:17:34,846 log 25068 6296 Internal Server Error: /account/logout/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 74, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 74, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 74, in logout
+    logout(request)
+  [Previous line repeated 959 more times]
+RecursionError: maximum recursion depth exceeded
+INFO 2023-09-04 14:18:40,417 autoreload 25068 24448 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:18:40,957 autoreload 25188 23800 Watching for file changes with StatReloader
+INFO 2023-09-04 14:18:47,442 autoreload 25188 23800 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:18:47,996 autoreload 14320 16584 Watching for file changes with StatReloader
+INFO 2023-09-04 14:20:17,117 autoreload 14320 16584 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:20:17,645 autoreload 24908 16708 Watching for file changes with StatReloader
+INFO 2023-09-04 14:20:19,046 autoreload 24908 16708 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:20:19,583 autoreload 21872 19728 Watching for file changes with StatReloader
+INFO 2023-09-04 14:20:21,001 autoreload 21872 19728 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:20:21,568 autoreload 11876 25048 Watching for file changes with StatReloader
+INFO 2023-09-04 14:20:22,942 autoreload 11876 25048 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:20:23,504 autoreload 6980 23408 Watching for file changes with StatReloader
+INFO 2023-09-04 14:20:28,995 autoreload 6980 23408 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:20:29,582 autoreload 19136 18976 Watching for file changes with StatReloader
+INFO 2023-09-04 14:20:30,789 autoreload 19136 18976 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:20:31,326 autoreload 2148 12984 Watching for file changes with StatReloader
+INFO 2023-09-04 14:20:36,607 autoreload 2148 12984 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:20:37,150 autoreload 6060 24564 Watching for file changes with StatReloader
+INFO 2023-09-04 14:20:46,476 autoreload 6060 24564 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:20:47,064 autoreload 7776 23772 Watching for file changes with StatReloader
+ERROR 2023-09-04 14:21:34,335 log 7776 2756 Internal Server Error: /account/logout/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 75, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 75, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 75, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 74, in logout
+    print("'it's on logout")
+RecursionError: maximum recursion depth exceeded while calling a Python object
+INFO 2023-09-04 14:30:15,241 autoreload 7776 23772 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:30:15,760 autoreload 860 2264 Watching for file changes with StatReloader
+INFO 2023-09-04 14:30:16,964 autoreload 860 2264 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:30:17,482 autoreload 24956 23732 Watching for file changes with StatReloader
+INFO 2023-09-04 14:30:18,660 autoreload 24956 23732 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:30:19,161 autoreload 25420 18700 Watching for file changes with StatReloader
+INFO 2023-09-04 14:30:33,677 autoreload 25420 18700 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:30:34,180 autoreload 19640 1380 Watching for file changes with StatReloader
+INFO 2023-09-04 14:30:35,350 autoreload 19640 1380 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:30:35,969 autoreload 22320 4380 Watching for file changes with StatReloader
+INFO 2023-09-04 14:31:20,193 autoreload 22320 4380 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:31:20,700 autoreload 22132 18184 Watching for file changes with StatReloader
+INFO 2023-09-04 14:31:22,897 autoreload 22132 18184 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:31:23,414 autoreload 12100 6656 Watching for file changes with StatReloader
+INFO 2023-09-04 14:31:27,696 autoreload 12100 6656 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:31:28,220 autoreload 14652 9728 Watching for file changes with StatReloader
+INFO 2023-09-04 14:31:31,434 autoreload 14652 9728 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:31:31,938 autoreload 16280 22176 Watching for file changes with StatReloader
+INFO 2023-09-04 14:31:33,152 autoreload 16280 22176 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:31:33,653 autoreload 2748 20800 Watching for file changes with StatReloader
+INFO 2023-09-04 14:33:04,152 autoreload 2748 20800 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 14:33:04,708 autoreload 14812 7280 Watching for file changes with StatReloader
+ERROR 2023-09-04 14:34:55,573 log 14812 20852 Internal Server Error: /account/logout/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 75, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 75, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 75, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 74, in logout
+    print("'it's on logout")
+RecursionError: maximum recursion depth exceeded while calling a Python object
+ERROR 2023-09-04 14:36:51,283 log 14812 17928 Internal Server Error: /account/logout/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 75, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 75, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 75, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 74, in logout
+    print("'it's on logout")
+RecursionError: maximum recursion depth exceeded while calling a Python object
+INFO 2023-09-04 14:40:30,861 autoreload 14812 7280 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:40:31,376 autoreload 18996 10140 Watching for file changes with StatReloader
+INFO 2023-09-04 14:40:33,818 autoreload 18996 10140 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:40:34,337 autoreload 19504 21516 Watching for file changes with StatReloader
+INFO 2023-09-04 14:40:35,720 autoreload 19504 21516 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:40:36,262 autoreload 7756 13948 Watching for file changes with StatReloader
+INFO 2023-09-04 14:40:38,677 autoreload 7756 13948 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:40:39,220 autoreload 19332 22212 Watching for file changes with StatReloader
+INFO 2023-09-04 14:40:43,680 autoreload 19332 22212 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:40:44,184 autoreload 17052 21160 Watching for file changes with StatReloader
+INFO 2023-09-04 14:40:53,800 autoreload 17052 21160 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:40:54,326 autoreload 8144 20372 Watching for file changes with StatReloader
+INFO 2023-09-04 14:40:56,744 autoreload 8144 20372 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:40:57,255 autoreload 18144 15524 Watching for file changes with StatReloader
+INFO 2023-09-04 14:40:58,437 autoreload 18144 15524 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:40:58,960 autoreload 4592 7712 Watching for file changes with StatReloader
+INFO 2023-09-04 14:41:01,331 autoreload 4592 7712 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:41:01,830 autoreload 19572 21076 Watching for file changes with StatReloader
+INFO 2023-09-04 14:41:05,276 autoreload 19572 21076 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:41:05,769 autoreload 22548 20336 Watching for file changes with StatReloader
+INFO 2023-09-04 14:41:08,218 autoreload 22548 20336 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:41:08,718 autoreload 24328 11912 Watching for file changes with StatReloader
+INFO 2023-09-04 14:41:13,187 autoreload 24328 11912 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:41:13,709 autoreload 18472 23060 Watching for file changes with StatReloader
+INFO 2023-09-04 14:41:15,127 autoreload 18472 23060 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:41:15,633 autoreload 25444 18332 Watching for file changes with StatReloader
+INFO 2023-09-04 14:41:16,968 autoreload 25444 18332 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:41:17,478 autoreload 15240 15460 Watching for file changes with StatReloader
+INFO 2023-09-04 14:41:24,995 autoreload 15240 15460 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:41:25,501 autoreload 15048 14164 Watching for file changes with StatReloader
+INFO 2023-09-04 14:41:29,983 autoreload 15048 14164 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:41:30,487 autoreload 21040 20636 Watching for file changes with StatReloader
+INFO 2023-09-04 14:41:35,969 autoreload 21040 20636 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:41:36,475 autoreload 19056 25524 Watching for file changes with StatReloader
+ERROR 2023-09-04 14:42:00,130 log 19056 24044 Internal Server Error: /account/logout/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 77, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 77, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 77, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 74, in logout
+    print(request.path)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+INFO 2023-09-04 14:42:18,505 autoreload 19056 25524 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:42:19,049 autoreload 20036 24612 Watching for file changes with StatReloader
+INFO 2023-09-04 14:42:22,338 autoreload 20036 24612 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:42:22,859 autoreload 12128 12856 Watching for file changes with StatReloader
+INFO 2023-09-04 14:42:53,248 autoreload 12128 12856 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:42:53,793 autoreload 22532 1148 Watching for file changes with StatReloader
+INFO 2023-09-04 14:42:58,107 autoreload 22532 1148 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:42:58,804 autoreload 21028 15472 Watching for file changes with StatReloader
+INFO 2023-09-04 14:43:02,082 autoreload 21028 15472 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:43:02,673 autoreload 6560 23648 Watching for file changes with StatReloader
+WARNING 2023-09-04 14:43:12,668 log 6560 1068 Not Found: /logout
+ERROR 2023-09-04 14:43:21,850 log 6560 1068 Internal Server Error: /account/logout/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 77, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 77, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 77, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 74, in logout
+    print(request.path)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+INFO 2023-09-04 14:44:48,315 autoreload 19924 11396 Watching for file changes with StatReloader
+ERROR 2023-09-04 14:45:05,299 log 19924 3672 Internal Server Error: /account/logout/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 77, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 77, in logout
+    logout(request)
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 77, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 74, in logout
+    print(request.path)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+INFO 2023-09-04 14:46:32,871 autoreload 19924 11396 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:46:33,403 autoreload 10624 1356 Watching for file changes with StatReloader
+INFO 2023-09-04 14:46:45,135 autoreload 10624 1356 C:\Users\Lenovo\Desktop\Music_player\music_player\account\urls.py changed, reloading.
+INFO 2023-09-04 14:46:45,641 autoreload 21176 14804 Watching for file changes with StatReloader
+INFO 2023-09-04 14:50:23,933 autoreload 21176 14804 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:50:24,445 autoreload 6552 15172 Watching for file changes with StatReloader
+INFO 2023-09-04 14:50:26,909 autoreload 6552 15172 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:50:27,424 autoreload 21644 17364 Watching for file changes with StatReloader
+INFO 2023-09-04 14:50:28,831 autoreload 21644 17364 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:50:29,356 autoreload 23396 21724 Watching for file changes with StatReloader
+INFO 2023-09-04 14:50:31,767 autoreload 23396 21724 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:50:32,301 autoreload 18384 9436 Watching for file changes with StatReloader
+INFO 2023-09-04 14:50:33,698 autoreload 18384 9436 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:50:34,241 autoreload 23172 9344 Watching for file changes with StatReloader
+INFO 2023-09-04 14:51:28,052 autoreload 23172 9344 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:51:28,567 autoreload 20164 22144 Watching for file changes with StatReloader
+INFO 2023-09-04 14:51:32,034 autoreload 20164 22144 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:51:32,541 autoreload 13832 8840 Watching for file changes with StatReloader
+INFO 2023-09-04 14:51:42,137 autoreload 13832 8840 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:51:42,703 autoreload 11692 14456 Watching for file changes with StatReloader
+INFO 2023-09-04 14:52:31,485 autoreload 11692 14456 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:52:32,054 autoreload 6936 25156 Watching for file changes with StatReloader
+INFO 2023-09-04 14:52:33,426 autoreload 6936 25156 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:52:33,943 autoreload 24736 11892 Watching for file changes with StatReloader
+INFO 2023-09-04 14:52:36,404 autoreload 24736 11892 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:52:36,936 autoreload 18508 19772 Watching for file changes with StatReloader
+INFO 2023-09-04 14:52:42,258 autoreload 18508 19772 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:52:42,818 autoreload 14652 19856 Watching for file changes with StatReloader
+INFO 2023-09-04 14:54:32,379 autoreload 14652 19856 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:54:32,893 autoreload 25260 852 Watching for file changes with StatReloader
+INFO 2023-09-04 14:54:34,336 autoreload 25260 852 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:54:34,865 autoreload 7880 19352 Watching for file changes with StatReloader
+INFO 2023-09-04 14:54:40,336 autoreload 7880 19352 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:54:40,862 autoreload 24496 12216 Watching for file changes with StatReloader
+INFO 2023-09-04 14:54:42,255 autoreload 24496 12216 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:54:42,753 autoreload 3052 17876 Watching for file changes with StatReloader
+INFO 2023-09-04 14:54:46,164 autoreload 3052 17876 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:54:46,723 autoreload 24300 23940 Watching for file changes with StatReloader
+INFO 2023-09-04 14:54:52,262 autoreload 24300 23940 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:54:52,774 autoreload 17168 25524 Watching for file changes with StatReloader
+INFO 2023-09-04 14:54:55,171 autoreload 17168 25524 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:54:55,713 autoreload 24596 11300 Watching for file changes with StatReloader
+INFO 2023-09-04 14:54:57,107 autoreload 24596 11300 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:54:57,654 autoreload 19008 23664 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:01,078 autoreload 19008 23664 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:01,590 autoreload 24956 9696 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:03,984 autoreload 24956 9696 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:04,502 autoreload 25568 3692 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:07,950 autoreload 25568 3692 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:08,494 autoreload 23648 19136 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:27,352 autoreload 23648 19136 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:27,908 autoreload 24968 22752 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:29,344 autoreload 24968 22752 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:29,860 autoreload 6288 21936 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:31,229 autoreload 6288 21936 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:31,761 autoreload 10252 23988 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:34,170 autoreload 10252 23988 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:34,727 autoreload 24136 20896 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:37,117 autoreload 24136 20896 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:37,647 autoreload 17592 84 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:40,073 autoreload 17592 84 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:40,583 autoreload 11728 13460 Watching for file changes with StatReloader
+INFO 2023-09-04 14:55:41,969 autoreload 11728 13460 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:55:42,490 autoreload 18808 14936 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:04,330 autoreload 18808 14936 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:04,886 autoreload 12628 23192 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:07,119 autoreload 12628 23192 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:07,636 autoreload 12268 11548 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:10,899 autoreload 12268 11548 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:11,417 autoreload 23972 3268 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:18,996 autoreload 23972 3268 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:19,569 autoreload 24700 20400 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:20,957 autoreload 24700 20400 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:21,471 autoreload 14516 17860 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:23,871 autoreload 14516 17860 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:24,395 autoreload 6676 17404 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:38,152 autoreload 6676 17404 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:38,660 autoreload 19924 24036 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:47,257 autoreload 19924 24036 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:47,786 autoreload 6352 18156 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:53,114 autoreload 6352 18156 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:53,665 autoreload 5216 2148 Watching for file changes with StatReloader
+INFO 2023-09-04 14:57:56,885 autoreload 5216 2148 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:57:57,375 autoreload 18420 1524 Watching for file changes with StatReloader
+INFO 2023-09-04 14:58:30,598 autoreload 18420 1524 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:58:31,116 autoreload 6280 17524 Watching for file changes with StatReloader
+INFO 2023-09-04 14:58:34,352 autoreload 6280 17524 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:58:34,882 autoreload 22288 16476 Watching for file changes with StatReloader
+INFO 2023-09-04 14:58:41,223 autoreload 22288 16476 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:58:41,743 autoreload 25148 2412 Watching for file changes with StatReloader
+INFO 2023-09-04 14:58:44,994 autoreload 25148 2412 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:58:45,489 autoreload 25068 21736 Watching for file changes with StatReloader
+INFO 2023-09-04 14:58:53,048 autoreload 25068 21736 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:58:53,589 autoreload 23192 12628 Watching for file changes with StatReloader
+INFO 2023-09-04 14:58:56,023 autoreload 23192 12628 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:58:56,523 autoreload 1444 14700 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:00,995 autoreload 1444 14700 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:01,540 autoreload 15476 23128 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:06,005 autoreload 15476 23128 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:06,544 autoreload 21972 20640 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:07,921 autoreload 21972 20640 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:08,447 autoreload 15588 24400 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:14,947 autoreload 15588 24400 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:15,474 autoreload 24448 10124 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:16,904 autoreload 24448 10124 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:17,434 autoreload 19412 16400 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:18,852 autoreload 19412 16400 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:19,369 autoreload 14996 20616 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:24,876 autoreload 14996 20616 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:25,388 autoreload 25564 21700 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:26,784 autoreload 25564 21700 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:27,307 autoreload 12096 11476 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:32,802 autoreload 12096 11476 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:33,331 autoreload 23200 1356 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:34,749 autoreload 23200 1356 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:35,303 autoreload 21112 13972 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:38,774 autoreload 21112 13972 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:39,302 autoreload 6896 14960 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:40,667 autoreload 6896 14960 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:41,175 autoreload 10164 3968 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:42,598 autoreload 10164 3968 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:43,165 autoreload 24276 9736 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:44,568 autoreload 24276 9736 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:45,111 autoreload 25332 14300 Watching for file changes with StatReloader
+INFO 2023-09-04 14:59:46,476 autoreload 25332 14300 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 14:59:46,986 autoreload 21840 10252 Watching for file changes with StatReloader
+WARNING 2023-09-04 15:00:40,291 log 21840 24072 Not Found: /logout
+WARNING 2023-09-04 15:00:51,101 log 21840 24072 Not Found: /account//logout
+INFO 2023-09-04 15:02:34,061 autoreload 21840 10252 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:02:34,555 autoreload 24632 6544 Watching for file changes with StatReloader
+INFO 2023-09-04 15:03:30,446 autoreload 24632 6544 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:03:31,018 autoreload 21560 22804 Watching for file changes with StatReloader
+INFO 2023-09-04 15:03:35,446 autoreload 21560 22804 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:03:35,995 autoreload 10100 19776 Watching for file changes with StatReloader
+INFO 2023-09-04 15:03:38,384 autoreload 10100 19776 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:03:38,902 autoreload 17404 14004 Watching for file changes with StatReloader
+INFO 2023-09-04 15:03:42,333 autoreload 17404 14004 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:03:42,843 autoreload 25568 13824 Watching for file changes with StatReloader
+INFO 2023-09-04 15:08:06,892 autoreload 25568 13824 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:08:07,396 autoreload 3052 11544 Watching for file changes with StatReloader
+INFO 2023-09-04 15:08:28,097 autoreload 3052 11544 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:08:28,604 autoreload 16096 9192 Watching for file changes with StatReloader
+INFO 2023-09-04 15:09:27,207 autoreload 16096 9192 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:09:27,732 autoreload 17012 14616 Watching for file changes with StatReloader
+INFO 2023-09-04 15:09:28,926 autoreload 17012 14616 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:09:29,444 autoreload 16076 23836 Watching for file changes with StatReloader
+INFO 2023-09-04 15:09:37,824 autoreload 16076 23836 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:09:38,330 autoreload 16880 6072 Watching for file changes with StatReloader
+INFO 2023-09-04 15:09:46,699 autoreload 16880 6072 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:09:47,202 autoreload 19260 21200 Watching for file changes with StatReloader
+INFO 2023-09-04 15:09:48,386 autoreload 19260 21200 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:09:48,959 autoreload 7020 6844 Watching for file changes with StatReloader
+INFO 2023-09-04 15:09:51,182 autoreload 7020 6844 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:09:51,701 autoreload 25572 19808 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:00,107 autoreload 25572 19808 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:00,624 autoreload 15704 25332 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:01,852 autoreload 15704 25332 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:02,384 autoreload 2704 3400 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:06,643 autoreload 2704 3400 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:07,157 autoreload 19968 14368 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:15,510 autoreload 19968 14368 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:16,043 autoreload 22320 5564 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:18,268 autoreload 22320 5564 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:18,784 autoreload 11060 16832 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:31,281 autoreload 11060 16832 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:31,809 autoreload 22772 11548 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:33,014 autoreload 22772 11548 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:33,555 autoreload 20764 7456 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:39,862 autoreload 20764 7456 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:40,407 autoreload 2996 14304 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:41,603 autoreload 2996 14304 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:42,109 autoreload 14516 15300 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:44,319 autoreload 14516 15300 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:44,878 autoreload 19332 8628 Watching for file changes with StatReloader
+INFO 2023-09-04 15:10:51,206 autoreload 19332 8628 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:10:51,710 autoreload 14676 2644 Watching for file changes with StatReloader
+ERROR 2023-09-04 15:11:43,129 log 14676 6916 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 53, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 72, in form_valid
+    form.add_error("incorrect Username or password")
+TypeError: BaseForm.add_error() missing 1 required positional argument: 'error'
+INFO 2023-09-04 15:15:02,548 autoreload 14676 2644 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:15:03,117 autoreload 22496 18332 Watching for file changes with StatReloader
+INFO 2023-09-04 15:15:05,337 autoreload 22496 18332 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:15:05,900 autoreload 13068 7176 Watching for file changes with StatReloader
+INFO 2023-09-04 15:15:07,337 autoreload 13068 7176 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:15:07,887 autoreload 21424 19608 Watching for file changes with StatReloader
+ERROR 2023-09-04 15:15:15,246 log 21424 24592 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 53, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 72, in form_valid
+    form.add_error("incorrect Username or password")
+TypeError: BaseForm.add_error() missing 1 required positional argument: 'error'
+INFO 2023-09-04 15:15:27,939 autoreload 21424 19608 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:15:28,469 autoreload 25228 16540 Watching for file changes with StatReloader
+INFO 2023-09-04 15:15:29,647 autoreload 25228 16540 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:15:30,295 autoreload 6896 14960 Watching for file changes with StatReloader
+ERROR 2023-09-04 15:15:33,568 log 6896 2748 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 53, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 72, in form_valid
+    form.add_error("incorrect Username or password")
+TypeError: BaseForm.add_error() missing 1 required positional argument: 'error'
+INFO 2023-09-04 15:15:44,193 autoreload 6896 14960 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:15:44,742 autoreload 24516 17564 Watching for file changes with StatReloader
+INFO 2023-09-04 15:15:50,252 autoreload 24516 17564 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:15:50,803 autoreload 24940 6380 Watching for file changes with StatReloader
+ERROR 2023-09-04 15:15:57,932 log 24940 12008 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 53, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 72, in form_valid
+    form.add_error(error="incorrect Username or password")
+TypeError: BaseForm.add_error() missing 1 required positional argument: 'field'
+INFO 2023-09-04 15:16:07,810 autoreload 24940 6380 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:16:08,365 autoreload 20624 14288 Watching for file changes with StatReloader
+INFO 2023-09-04 15:16:09,750 autoreload 20624 14288 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:16:10,258 autoreload 11500 19144 Watching for file changes with StatReloader
+INFO 2023-09-04 15:16:11,655 autoreload 11500 19144 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:16:12,243 autoreload 12116 3164 Watching for file changes with StatReloader
+INFO 2023-09-04 15:16:15,498 autoreload 12116 3164 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:16:16,026 autoreload 21860 24128 Watching for file changes with StatReloader
+INFO 2023-09-04 15:16:17,448 autoreload 21860 24128 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:16:18,085 autoreload 13040 9672 Watching for file changes with StatReloader
+ERROR 2023-09-04 15:16:18,985 log 13040 4000 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 53, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 72, in form_valid
+    form.add_error(firld=None, error="incorrect Username or password")
+TypeError: BaseForm.add_error() got an unexpected keyword argument 'firld'
+INFO 2023-09-04 15:16:27,763 autoreload 13040 9672 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:16:28,344 autoreload 13352 23716 Watching for file changes with StatReloader
+INFO 2023-09-04 15:19:20,928 autoreload 13352 23716 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:19:21,481 autoreload 11728 1356 Watching for file changes with StatReloader
+INFO 2023-09-04 15:19:43,344 autoreload 11728 1356 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:19:43,909 autoreload 20384 14168 Watching for file changes with StatReloader
+INFO 2023-09-04 15:19:46,347 autoreload 20384 14168 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:19:46,923 autoreload 13408 7880 Watching for file changes with StatReloader
+INFO 2023-09-04 15:19:49,143 autoreload 13408 7880 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:19:49,661 autoreload 22804 13328 Watching for file changes with StatReloader
+INFO 2023-09-04 15:19:50,870 autoreload 22804 13328 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:19:51,394 autoreload 21628 19936 Watching for file changes with StatReloader
+INFO 2023-09-04 15:19:52,623 autoreload 21628 19936 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:19:53,138 autoreload 24916 7940 Watching for file changes with StatReloader
+INFO 2023-09-04 15:19:55,368 autoreload 24916 7940 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:19:55,970 autoreload 23732 18456 Watching for file changes with StatReloader
+INFO 2023-09-04 15:19:59,228 autoreload 23732 18456 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:19:59,748 autoreload 25352 1068 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:22,467 autoreload 25352 1068 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:22,988 autoreload 14464 19452 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:24,211 autoreload 14464 19452 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:24,754 autoreload 17376 22008 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:26,960 autoreload 17376 22008 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:27,480 autoreload 16140 7200 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:29,720 autoreload 16140 7200 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:30,262 autoreload 11476 13640 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:32,506 autoreload 11476 13640 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:33,043 autoreload 23036 5820 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:36,269 autoreload 23036 5820 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:36,816 autoreload 7572 8760 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:39,038 autoreload 7572 8760 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:39,559 autoreload 5440 11844 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:42,806 autoreload 5440 11844 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:43,315 autoreload 24980 25596 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:46,563 autoreload 24980 25596 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:47,102 autoreload 20316 14936 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:48,306 autoreload 20316 14936 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:48,833 autoreload 11120 6408 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:52,063 autoreload 11120 6408 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:52,598 autoreload 11876 21728 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:53,806 autoreload 11876 21728 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:54,335 autoreload 20592 14064 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:55,564 autoreload 20592 14064 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:20:56,131 autoreload 10616 6752 Watching for file changes with StatReloader
+INFO 2023-09-04 15:20:59,441 autoreload 10616 6752 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:00,010 autoreload 7880 13408 Watching for file changes with StatReloader
+INFO 2023-09-04 15:21:01,213 autoreload 7880 13408 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:01,725 autoreload 12204 14264 Watching for file changes with StatReloader
+INFO 2023-09-04 15:21:04,963 autoreload 12204 14264 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:05,490 autoreload 23840 10332 Watching for file changes with StatReloader
+INFO 2023-09-04 15:21:06,692 autoreload 23840 10332 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:07,190 autoreload 4140 14140 Watching for file changes with StatReloader
+INFO 2023-09-04 15:21:10,430 autoreload 4140 14140 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:10,932 autoreload 20180 1444 Watching for file changes with StatReloader
+INFO 2023-09-04 15:21:20,337 autoreload 20180 1444 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:20,855 autoreload 5264 20724 Watching for file changes with StatReloader
+INFO 2023-09-04 15:21:28,215 autoreload 5264 20724 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:28,760 autoreload 14820 24028 Watching for file changes with StatReloader
+INFO 2023-09-04 15:21:39,220 autoreload 14820 24028 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:39,748 autoreload 18640 20588 Watching for file changes with StatReloader
+INFO 2023-09-04 15:21:48,128 autoreload 18640 20588 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:48,684 autoreload 19728 12852 Watching for file changes with StatReloader
+INFO 2023-09-04 15:21:49,877 autoreload 19728 12852 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:21:50,406 autoreload 6740 12472 Watching for file changes with StatReloader
+INFO 2023-09-04 15:22:02,890 autoreload 6740 12472 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:22:03,388 autoreload 3376 6228 Watching for file changes with StatReloader
+INFO 2023-09-04 15:22:10,988 autoreload 3376 6228 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:22:11,525 autoreload 17176 22404 Watching for file changes with StatReloader
+INFO 2023-09-04 15:22:20,128 autoreload 17176 22404 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:22:20,725 autoreload 14208 1284 Watching for file changes with StatReloader
+INFO 2023-09-04 15:22:23,147 autoreload 14208 1284 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:22:23,639 autoreload 15552 11548 Watching for file changes with StatReloader
+ERROR 2023-09-04 15:22:30,787 log 15552 25364 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 53, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py", line 61, in form_valid
+    if User.objects.filter(Q(email=cd['username'])|Q(username=cd['username'])):
+                           ^
+NameError: name 'Q' is not defined
+INFO 2023-09-04 15:22:43,705 autoreload 15552 11548 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:22:44,223 autoreload 17252 13408 Watching for file changes with StatReloader
+INFO 2023-09-04 15:22:46,669 autoreload 17252 13408 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:22:47,191 autoreload 20656 6784 Watching for file changes with StatReloader
+INFO 2023-09-04 15:22:55,806 autoreload 20656 6784 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:22:56,308 autoreload 320 12168 Watching for file changes with StatReloader
+INFO 2023-09-04 15:22:58,557 autoreload 320 12168 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:22:59,056 autoreload 24312 15944 Watching for file changes with StatReloader
+INFO 2023-09-04 15:23:02,332 autoreload 24312 15944 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:23:02,900 autoreload 14816 23188 Watching for file changes with StatReloader
+INFO 2023-09-04 15:23:07,200 autoreload 14816 23188 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:23:07,760 autoreload 19328 12060 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:04,689 autoreload 19328 12060 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:05,227 autoreload 16888 24184 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:07,675 autoreload 16888 24184 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:08,232 autoreload 23472 12856 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:09,624 autoreload 23472 12856 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:10,154 autoreload 6364 6544 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:11,549 autoreload 6364 6544 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:12,162 autoreload 15452 17216 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:16,597 autoreload 15452 17216 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:17,159 autoreload 23640 14676 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:19,566 autoreload 23640 14676 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:20,103 autoreload 21724 6500 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:23,516 autoreload 21724 6500 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:24,109 autoreload 14860 18844 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:25,514 autoreload 14860 18844 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:26,038 autoreload 25320 7944 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:28,462 autoreload 25320 7944 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:29,029 autoreload 20248 18256 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:36,649 autoreload 20248 18256 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:37,179 autoreload 18736 22024 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:38,563 autoreload 18736 22024 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:39,080 autoreload 3724 20744 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:43,621 autoreload 3724 20744 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:44,182 autoreload 19872 21968 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:47,661 autoreload 19872 21968 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:48,203 autoreload 22840 24512 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:49,596 autoreload 22840 24512 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:50,121 autoreload 17952 24836 Watching for file changes with StatReloader
+INFO 2023-09-04 15:24:56,707 autoreload 17952 24836 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:24:57,251 autoreload 24892 20500 Watching for file changes with StatReloader
+INFO 2023-09-04 15:25:15,082 autoreload 24892 20500 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:25:15,603 autoreload 22456 13424 Watching for file changes with StatReloader
+INFO 2023-09-04 15:25:16,982 autoreload 22456 13424 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:25:17,480 autoreload 20060 9420 Watching for file changes with StatReloader
+INFO 2023-09-04 15:25:34,287 autoreload 20060 9420 C:\Users\Lenovo\Desktop\Music_player\music_player\account\views.py changed, reloading.
+INFO 2023-09-04 15:25:34,833 autoreload 1648 11912 Watching for file changes with StatReloader
+INFO 2023-09-04 15:50:33,979 autoreload 1648 11912 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:50:34,515 autoreload 13672 15560 Watching for file changes with StatReloader
+INFO 2023-09-04 15:50:47,191 autoreload 13672 15560 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:50:47,711 autoreload 15028 10792 Watching for file changes with StatReloader
+INFO 2023-09-04 15:50:51,154 autoreload 15028 10792 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:50:51,667 autoreload 14908 3176 Watching for file changes with StatReloader
+INFO 2023-09-04 15:50:52,863 autoreload 14908 3176 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:50:53,361 autoreload 19544 5564 Watching for file changes with StatReloader
+INFO 2023-09-04 15:50:58,661 autoreload 19544 5564 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:50:59,208 autoreload 17612 22200 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:00,451 autoreload 17612 22200 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:00,958 autoreload 14824 24984 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:14,448 autoreload 14824 24984 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:14,971 autoreload 21732 15600 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:19,234 autoreload 21732 15600 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:19,764 autoreload 24680 7308 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:22,996 autoreload 24680 7308 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:23,493 autoreload 8108 9940 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:24,668 autoreload 8108 9940 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:25,175 autoreload 10036 23172 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:33,503 autoreload 10036 23172 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:34,018 autoreload 19356 5440 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:36,228 autoreload 19356 5440 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:36,739 autoreload 13568 17584 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:37,911 autoreload 13568 17584 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:38,454 autoreload 9436 14364 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:41,695 autoreload 9436 14364 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:42,251 autoreload 19704 24876 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:45,501 autoreload 19704 24876 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:46,030 autoreload 17312 12424 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:47,257 autoreload 17312 12424 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:47,806 autoreload 12876 13340 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:48,993 autoreload 12876 13340 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:49,485 autoreload 8604 24332 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:50,662 autoreload 8604 24332 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:51,180 autoreload 19576 11672 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:54,394 autoreload 19576 11672 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:54,922 autoreload 24600 16556 Watching for file changes with StatReloader
+INFO 2023-09-04 15:51:59,196 autoreload 24600 16556 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:51:59,761 autoreload 17276 24136 Watching for file changes with StatReloader
+INFO 2023-09-04 15:52:07,102 autoreload 17276 24136 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:52:07,635 autoreload 6352 24152 Watching for file changes with StatReloader
+INFO 2023-09-04 15:52:10,907 autoreload 6352 24152 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:52:11,476 autoreload 6492 13980 Watching for file changes with StatReloader
+INFO 2023-09-04 15:52:14,730 autoreload 6492 13980 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:52:15,252 autoreload 344 11976 Watching for file changes with StatReloader
+INFO 2023-09-04 15:53:03,887 autoreload 344 11976 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:53:04,449 autoreload 24096 4136 Watching for file changes with StatReloader
+INFO 2023-09-04 15:53:05,826 autoreload 24096 4136 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:53:06,308 autoreload 24732 2328 Watching for file changes with StatReloader
+INFO 2023-09-04 15:53:09,781 autoreload 24732 2328 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:53:10,323 autoreload 16084 24040 Watching for file changes with StatReloader
+INFO 2023-09-04 15:53:14,787 autoreload 16084 24040 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:53:15,306 autoreload 2100 23152 Watching for file changes with StatReloader
+INFO 2023-09-04 15:53:24,940 autoreload 2100 23152 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:53:25,521 autoreload 23448 21860 Watching for file changes with StatReloader
+INFO 2023-09-04 15:53:29,989 autoreload 23448 21860 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:53:30,517 autoreload 21212 7880 Watching for file changes with StatReloader
+INFO 2023-09-04 15:53:36,007 autoreload 21212 7880 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:53:36,562 autoreload 2184 21528 Watching for file changes with StatReloader
+INFO 2023-09-04 15:53:52,289 autoreload 2184 21528 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:53:52,798 autoreload 3372 20068 Watching for file changes with StatReloader
+INFO 2023-09-04 15:53:59,294 autoreload 3372 20068 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:53:59,862 autoreload 17980 23008 Watching for file changes with StatReloader
+INFO 2023-09-04 15:54:08,479 autoreload 17980 23008 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:54:09,002 autoreload 16976 21740 Watching for file changes with StatReloader
+INFO 2023-09-04 15:54:16,563 autoreload 16976 21740 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:54:17,089 autoreload 18452 11412 Watching for file changes with StatReloader
+INFO 2023-09-04 15:54:20,585 autoreload 18452 11412 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:54:21,109 autoreload 10536 23388 Watching for file changes with StatReloader
+INFO 2023-09-04 15:54:23,322 autoreload 10536 23388 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:54:23,881 autoreload 8268 23772 Watching for file changes with StatReloader
+INFO 2023-09-04 15:54:28,192 autoreload 8268 23772 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 15:54:28,745 autoreload 14748 8332 Watching for file changes with StatReloader
+INFO 2023-09-04 17:09:35,778 autoreload 12216 22144 Watching for file changes with StatReloader
+ERROR 2023-09-04 17:09:40,712 log 12216 2264 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py", line 18, in get_context_data
+    context["playlists"] = PlayList.objects.filter(owner=self.request.user)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1534, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1565, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1480, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1307, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000016EB8B5DDD0>>.
+INFO 2023-09-04 17:10:54,530 autoreload 12216 22144 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:10:55,047 autoreload 1108 13960 Watching for file changes with StatReloader
+INFO 2023-09-04 17:10:58,332 autoreload 1108 13960 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:10:58,868 autoreload 25052 19104 Watching for file changes with StatReloader
+INFO 2023-09-04 17:11:00,056 autoreload 25052 19104 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:11:00,620 autoreload 14300 16696 Watching for file changes with StatReloader
+INFO 2023-09-04 17:11:01,822 autoreload 14300 16696 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:11:02,372 autoreload 17364 21488 Watching for file changes with StatReloader
+INFO 2023-09-04 17:11:04,581 autoreload 17364 21488 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:11:05,096 autoreload 16860 7244 Watching for file changes with StatReloader
+INFO 2023-09-04 17:11:06,301 autoreload 16860 7244 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:11:06,851 autoreload 7320 24212 Watching for file changes with StatReloader
+INFO 2023-09-04 17:11:13,155 autoreload 7320 24212 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:11:13,708 autoreload 3748 21968 Watching for file changes with StatReloader
+INFO 2023-09-04 17:11:16,947 autoreload 3748 21968 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:11:17,481 autoreload 13800 19068 Watching for file changes with StatReloader
+INFO 2023-09-04 17:11:19,728 autoreload 13800 19068 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:11:20,251 autoreload 22360 8696 Watching for file changes with StatReloader
+INFO 2023-09-04 17:11:24,540 autoreload 22360 8696 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:11:25,054 autoreload 18344 10856 Watching for file changes with StatReloader
+INFO 2023-09-04 17:11:38,429 autoreload 10520 14064 Watching for file changes with StatReloader
+ERROR 2023-09-04 17:11:40,572 log 10520 2520 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py", line 18, in get_context_data
+    context["playlists"] = PlayList.objects.filter(owner=self.request.user) if isinstance(request.user, User) else []
+                                                                                          ^^^^^^^
+NameError: name 'request' is not defined
+INFO 2023-09-04 17:11:50,255 autoreload 10520 14064 C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py changed, reloading.
+INFO 2023-09-04 17:11:50,892 autoreload 3384 9860 Watching for file changes with StatReloader
+ERROR 2023-09-04 17:11:52,554 log 3384 24524 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py", line 18, in get_context_data
+    context["playlists"] = PlayList.objects.filter(owner=self.request.user) if isinstance(self.request.user, User) else []
+                                                                                          ^^^^^^^^^^^
+NameError: name 'selfrequest' is not defined
+INFO 2023-09-04 17:12:02,736 autoreload 13644 11632 Watching for file changes with StatReloader
+ERROR 2023-09-04 17:12:04,485 log 13644 2204 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\Music_player\music_player\music\views.py", line 19, in get_context_data
+    context["playlist_form"] = CreatePlayListForm()
+                               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\models.py", line 350, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+INFO 2023-09-04 17:12:20,737 autoreload 13644 11632 C:\Users\Lenovo\Desktop\Music_player\music_player\music\forms.py changed, reloading.
+INFO 2023-09-04 17:12:21,304 autoreload 14856 24480 Watching for file changes with StatReloader
+INFO 2023-09-04 17:12:22,517 autoreload 14856 24480 C:\Users\Lenovo\Desktop\Music_player\music_player\music\forms.py changed, reloading.
+INFO 2023-09-04 17:12:23,215 autoreload 20680 23512 Watching for file changes with StatReloader
+INFO 2023-09-04 17:12:25,439 autoreload 20680 23512 C:\Users\Lenovo\Desktop\Music_player\music_player\music\forms.py changed, reloading.
+INFO 2023-09-04 17:12:26,069 autoreload 14164 9188 Watching for file changes with StatReloader
+INFO 2023-09-04 17:12:42,885 autoreload 22748 22148 Watching for file changes with StatReloader
+WARNING 2023-09-04 17:17:10,018 log 22748 2344 Not Found: /sidebars.css
+WARNING 2023-09-04 17:17:12,931 log 22748 2344 Not Found: /sidebars.css
+ERROR 2023-09-04 17:52:37,370 log 22748 18640 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static', expected 'endblock'. Did you forget to register or load this tag?
+WARNING 2023-09-04 17:53:39,207 log 22748 2152 Not Found: /covers/2.jpg
+WARNING 2023-09-04 17:53:39,208 log 22748 23488 Not Found: /covers/1.jpg
+WARNING 2023-09-04 17:53:39,220 log 22748 18640 Not Found: /covers/3.jpg
+WARNING 2023-09-04 17:53:39,224 log 22748 22316 Not Found: /covers/4.jpg
+WARNING 2023-09-04 17:53:39,233 log 22748 11292 Not Found: /covers/5.jpg
+WARNING 2023-09-04 17:53:39,235 log 22748 19708 Not Found: /covers/6.jpg
+WARNING 2023-09-04 17:53:39,241 log 22748 2152 Not Found: /covers/7.jpg
+WARNING 2023-09-04 17:54:38,363 log 22748 19708 Not Found: /covers/2.jpg
+WARNING 2023-09-04 17:54:38,364 log 22748 2152 Not Found: /covers/1.jpg
+WARNING 2023-09-04 17:54:38,374 log 22748 22316 Not Found: /covers/5.jpg
+WARNING 2023-09-04 17:54:38,375 log 22748 11292 Not Found: /covers/3.jpg
+WARNING 2023-09-04 17:54:38,376 log 22748 23488 Not Found: /covers/4.jpg
+WARNING 2023-09-04 17:54:38,377 log 22748 18640 Not Found: /covers/6.jpg
+WARNING 2023-09-04 17:54:38,387 log 22748 19708 Not Found: /covers/7.jpg
+WARNING 2023-09-04 17:57:16,702 log 22748 19708 Not Found: /covers/1.jpg
+WARNING 2023-09-04 17:57:16,703 log 22748 18640 Not Found: /covers/2.jpg
+WARNING 2023-09-04 17:57:16,742 log 22748 23488 Not Found: /covers/5.jpg
+WARNING 2023-09-04 17:57:16,747 log 22748 2152 Not Found: /covers/7.jpg
+WARNING 2023-09-04 17:57:16,752 log 22748 22316 Not Found: /covers/6.jpg
+WARNING 2023-09-04 17:57:16,756 log 22748 18640 Not Found: /covers/3.jpg
+WARNING 2023-09-04 17:57:16,757 log 22748 19708 Not Found: /covers/4.jpg
+WARNING 2023-09-04 17:57:51,471 log 22748 18640 Not Found: /covers/1.jpg
+WARNING 2023-09-04 17:57:51,473 log 22748 22316 Not Found: /covers/2.jpg
+WARNING 2023-09-04 17:57:51,503 log 22748 23488 Not Found: /covers/5.jpg
+WARNING 2023-09-04 17:57:51,507 log 22748 19708 Not Found: /covers/3.jpg
+WARNING 2023-09-04 17:57:51,510 log 22748 2152 Not Found: /covers/4.jpg
+WARNING 2023-09-04 17:57:51,515 log 22748 11292 Not Found: /covers/6.jpg
+WARNING 2023-09-04 17:57:51,524 log 22748 18640 Not Found: /covers/7.jpg
+WARNING 2023-09-04 17:59:41,261 log 22748 11292 Not Found: /covers/2.jpg
+WARNING 2023-09-04 17:59:41,265 log 22748 18640 Not Found: /covers/1.jpg
+WARNING 2023-09-04 17:59:41,336 log 22748 18640 Not Found: /covers/3.jpg
+WARNING 2023-09-04 17:59:41,339 log 22748 19708 Not Found: /covers/6.jpg
+WARNING 2023-09-04 17:59:41,341 log 22748 23488 Not Found: /covers/7.jpg
+WARNING 2023-09-04 17:59:41,345 log 22748 2152 Not Found: /covers/5.jpg
+WARNING 2023-09-04 17:59:41,346 log 22748 11292 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:01:03,990 log 22748 2152 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:01:03,993 log 22748 11292 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:01:04,076 log 22748 18640 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:01:04,081 log 22748 22316 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:01:04,084 log 22748 23488 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:01:04,089 log 22748 19708 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:01:04,099 log 22748 11292 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:01:33,487 log 22748 19708 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:01:33,489 log 22748 11292 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:01:33,553 log 22748 19708 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:01:33,555 log 22748 18640 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:01:33,556 log 22748 23488 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:01:33,557 log 22748 11292 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:01:33,559 log 22748 22316 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:03:54,019 log 22748 23488 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:03:54,021 log 22748 18640 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:03:54,081 log 22748 23488 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:03:54,085 log 22748 18640 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:03:54,088 log 22748 11292 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:03:54,090 log 22748 2152 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:03:54,092 log 22748 19708 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:04:08,218 log 22748 19708 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:04:08,221 log 22748 2152 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:04:08,241 log 22748 19708 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:04:08,242 log 22748 2152 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:04:08,257 log 22748 2152 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:04:08,717 log 22748 2152 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:04:08,720 log 22748 19708 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:04:12,013 log 22748 19708 Not Found: /favicon.ico
+WARNING 2023-09-04 18:04:50,827 log 22748 2152 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:04:50,828 log 22748 11292 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:04:50,853 log 22748 18640 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:04:50,856 log 22748 23488 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:04:50,860 log 22748 22316 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:04:50,865 log 22748 19708 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:04:50,876 log 22748 2152 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:16:49,248 log 22748 25452 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:16:49,255 log 22748 17324 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:16:49,267 log 22748 13680 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:16:49,289 log 22748 24328 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:16:49,293 log 22748 2692 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:16:49,307 log 22748 3912 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:16:49,314 log 22748 25452 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:17:03,387 log 22748 2692 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:17:03,395 log 22748 25452 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:17:03,412 log 22748 17324 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:17:03,419 log 22748 24328 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:17:03,424 log 22748 13680 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:17:03,432 log 22748 3912 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:17:03,440 log 22748 2692 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:17:13,919 log 22748 3912 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:17:13,922 log 22748 13680 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:17:13,933 log 22748 25452 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:17:13,935 log 22748 2692 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:17:13,942 log 22748 24328 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:17:13,946 log 22748 17324 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:17:13,962 log 22748 3912 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:17:32,116 log 22748 17324 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:17:32,118 log 22748 24328 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:17:32,158 log 22748 13680 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:17:32,161 log 22748 2692 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:17:32,165 log 22748 25452 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:17:32,179 log 22748 3912 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:17:32,188 log 22748 24328 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:19:08,159 log 22748 2692 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:19:08,160 log 22748 25452 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:19:08,168 log 22748 3912 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:19:08,171 log 22748 13680 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:19:08,174 log 22748 17324 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:19:08,177 log 22748 24328 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:19:08,204 log 22748 2692 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:22:54,298 log 22748 13680 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:22:54,299 log 22748 17324 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:22:54,307 log 22748 24328 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:22:54,311 log 22748 2692 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:22:54,313 log 22748 3912 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:22:54,324 log 22748 25452 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:22:54,336 log 22748 13680 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:23:45,843 log 22748 3912 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:23:45,844 log 22748 25452 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:23:45,851 log 22748 13680 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:23:45,854 log 22748 24328 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:23:45,859 log 22748 2692 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:23:45,863 log 22748 17324 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:23:45,882 log 22748 3912 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:32:41,896 log 22748 15452 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:32:41,901 log 22748 12276 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:32:41,911 log 22748 14708 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:32:41,925 log 22748 2196 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:32:41,928 log 22748 18856 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:32:41,936 log 22748 18804 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:32:41,948 log 22748 15452 Not Found: /covers/7.jpg
+WARNING 2023-09-04 18:35:39,152 log 22748 18856 Not Found: /covers/1.jpg
+WARNING 2023-09-04 18:35:39,156 log 22748 2196 Not Found: /covers/2.jpg
+WARNING 2023-09-04 18:35:39,168 log 22748 12276 Not Found: /covers/5.jpg
+WARNING 2023-09-04 18:35:39,170 log 22748 14708 Not Found: /covers/4.jpg
+WARNING 2023-09-04 18:35:39,174 log 22748 18804 Not Found: /covers/3.jpg
+WARNING 2023-09-04 18:35:39,183 log 22748 15452 Not Found: /covers/6.jpg
+WARNING 2023-09-04 18:35:39,197 log 22748 18856 Not Found: /covers/7.jpg
+INFO 2023-09-04 20:13:16,300 autoreload 23556 26364 Watching for file changes with StatReloader
+WARNING 2023-09-04 20:28:24,093 log 23556 18124 Not Found: /favicon.ico
+WARNING 2023-09-04 21:42:34,220 log 23556 11968 Not Found: /favicon.ico
+WARNING 2023-09-04 22:15:58,833 log 23556 25664 Not Found: /favicon.ico
+WARNING 2023-09-04 23:29:51,293 log 23556 22476 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:29:51,296 log 23556 4380 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:29:51,299 log 23556 23600 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:29:51,303 log 23556 17276 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:29:51,305 log 23556 9712 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:29:51,309 log 23556 16976 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:29:51,326 log 23556 22476 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:31:08,120 log 23556 16976 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:31:08,122 log 23556 9712 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:31:08,124 log 23556 22476 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:31:08,125 log 23556 17276 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:31:08,127 log 23556 4380 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:31:08,129 log 23556 23600 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:31:08,158 log 23556 17276 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:31:36,713 log 23556 4380 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:31:36,716 log 23556 17276 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:31:36,720 log 23556 16976 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:31:36,721 log 23556 22476 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:31:36,722 log 23556 9712 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:31:36,723 log 23556 23600 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:31:36,739 log 23556 4380 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:32:50,841 log 23556 4380 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:32:50,844 log 23556 23600 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:32:50,869 log 23556 23600 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:32:50,872 log 23556 4380 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:32:50,887 log 23556 23600 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:32:50,910 log 23556 23600 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:32:50,925 log 23556 23600 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:32:54,068 log 23556 23600 Not Found: /favicon.ico
+WARNING 2023-09-04 23:35:16,716 log 23556 16976 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:35:16,719 log 23556 22476 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:35:16,720 log 23556 9712 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:35:16,721 log 23556 4380 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:35:16,722 log 23556 17276 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:35:16,727 log 23556 23600 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:35:16,742 log 23556 16976 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:35:35,000 log 23556 17276 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:35:35,002 log 23556 4380 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:35:35,007 log 23556 23600 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:35:35,009 log 23556 22476 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:35:35,010 log 23556 9712 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:35:35,017 log 23556 16976 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:35:35,038 log 23556 17276 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:35:43,620 log 23556 16976 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:35:43,625 log 23556 4380 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:35:43,627 log 23556 22476 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:35:43,631 log 23556 23600 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:35:43,631 log 23556 9712 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:35:43,634 log 23556 17276 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:35:43,656 log 23556 16976 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:36:32,802 log 23556 4380 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:36:32,803 log 23556 17276 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:36:32,805 log 23556 23600 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:36:32,807 log 23556 22476 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:36:32,811 log 23556 9712 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:36:32,821 log 23556 16976 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:36:32,834 log 23556 4380 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:36:43,792 log 23556 9712 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:36:43,801 log 23556 16976 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:36:43,803 log 23556 22476 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:36:43,806 log 23556 17276 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:36:43,808 log 23556 23600 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:36:43,829 log 23556 4380 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:36:43,840 log 23556 9712 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:36:53,995 log 23556 23600 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:36:53,999 log 23556 4380 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:36:54,001 log 23556 22476 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:36:54,004 log 23556 16976 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:36:54,005 log 23556 17276 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:36:54,015 log 23556 9712 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:36:54,028 log 23556 23600 Not Found: /covers/7.jpg
+WARNING 2023-09-04 23:37:26,420 log 23556 17276 Not Found: /covers/2.jpg
+WARNING 2023-09-04 23:37:26,422 log 23556 9712 Not Found: /covers/1.jpg
+WARNING 2023-09-04 23:37:26,423 log 23556 4380 Not Found: /covers/5.jpg
+WARNING 2023-09-04 23:37:26,431 log 23556 16976 Not Found: /covers/3.jpg
+WARNING 2023-09-04 23:37:26,434 log 23556 22476 Not Found: /covers/4.jpg
+WARNING 2023-09-04 23:37:26,453 log 23556 23600 Not Found: /covers/6.jpg
+WARNING 2023-09-04 23:37:26,466 log 23556 17276 Not Found: /covers/7.jpg
+WARNING 2023-09-05 00:02:03,996 log 23556 19076 Not Found: /covers/3.jpg
+WARNING 2023-09-05 00:02:03,997 log 23556 18108 Not Found: /covers/2.jpg
+WARNING 2023-09-05 00:02:04,000 log 23556 10100 Not Found: /covers/1.jpg
+WARNING 2023-09-05 00:02:04,004 log 23556 13412 Not Found: /covers/5.jpg
+WARNING 2023-09-05 00:02:04,007 log 23556 23328 Not Found: /covers/6.jpg
+WARNING 2023-09-05 00:02:04,016 log 23556 11108 Not Found: /covers/4.jpg
+WARNING 2023-09-05 00:02:04,031 log 23556 18108 Not Found: /covers/7.jpg
+WARNING 2023-09-05 00:02:04,032 log 23556 19076 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 00:05:49,094 log 23556 11108 Not Found: /covers/1.jpg
+WARNING 2023-09-05 00:05:49,098 log 23556 13412 Not Found: /covers/3.jpg
+WARNING 2023-09-05 00:05:49,104 log 23556 10100 Not Found: /covers/4.jpg
+WARNING 2023-09-05 00:05:49,106 log 23556 23328 Not Found: /covers/2.jpg
+WARNING 2023-09-05 00:05:49,109 log 23556 18108 Not Found: /covers/5.jpg
+WARNING 2023-09-05 00:05:49,112 log 23556 19076 Not Found: /covers/6.jpg
+WARNING 2023-09-05 00:05:49,137 log 23556 11108 Not Found: /covers/7.jpg
+WARNING 2023-09-05 00:05:49,138 log 23556 13412 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 14:36:55,336 log 23556 26280 Not Found: /covers/3.jpg
+WARNING 2023-09-05 14:36:55,338 log 23556 12692 Not Found: /covers/4.jpg
+WARNING 2023-09-05 14:36:55,340 log 23556 23892 Not Found: /covers/1.jpg
+WARNING 2023-09-05 14:36:55,344 log 23556 24800 Not Found: /covers/2.jpg
+WARNING 2023-09-05 14:36:55,346 log 23556 16448 Not Found: /covers/5.jpg
+WARNING 2023-09-05 14:36:55,383 log 23556 11156 Not Found: /covers/6.jpg
+WARNING 2023-09-05 14:36:55,386 log 23556 26280 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 14:36:55,389 log 23556 12692 Not Found: /covers/7.jpg
+WARNING 2023-09-05 14:38:09,972 log 23556 26280 Not Found: /covers/2.jpg
+WARNING 2023-09-05 14:38:09,973 log 23556 11156 Not Found: /covers/1.jpg
+WARNING 2023-09-05 14:38:09,996 log 23556 26280 Not Found: /covers/3.jpg
+WARNING 2023-09-05 14:38:09,996 log 23556 11156 Not Found: /covers/4.jpg
+WARNING 2023-09-05 14:38:10,014 log 23556 26280 Not Found: /covers/5.jpg
+WARNING 2023-09-05 14:38:10,032 log 23556 26280 Not Found: /covers/6.jpg
+WARNING 2023-09-05 14:38:10,047 log 23556 26280 Not Found: /covers/7.jpg
+WARNING 2023-09-05 14:38:10,060 log 23556 26280 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 14:38:13,186 log 23556 26280 Not Found: /favicon.ico
+WARNING 2023-09-05 14:40:11,553 log 23556 11156 Not Found: /covers/2.jpg
+WARNING 2023-09-05 14:40:11,555 log 23556 12692 Not Found: /covers/3.jpg
+WARNING 2023-09-05 14:40:11,558 log 23556 16448 Not Found: /covers/4.jpg
+WARNING 2023-09-05 14:40:11,560 log 23556 24800 Not Found: /covers/5.jpg
+WARNING 2023-09-05 14:40:11,562 log 23556 26280 Not Found: /covers/1.jpg
+WARNING 2023-09-05 14:40:11,608 log 23556 23892 Not Found: /covers/7.jpg
+WARNING 2023-09-05 14:40:11,611 log 23556 12692 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 14:40:11,613 log 23556 11156 Not Found: /covers/6.jpg
+WARNING 2023-09-05 14:41:23,650 log 23556 11156 Not Found: /covers/1.jpg
+WARNING 2023-09-05 14:41:23,652 log 23556 26280 Not Found: /covers/4.jpg
+WARNING 2023-09-05 14:41:23,654 log 23556 24800 Not Found: /covers/5.jpg
+WARNING 2023-09-05 14:41:23,657 log 23556 23892 Not Found: /covers/3.jpg
+WARNING 2023-09-05 14:41:23,661 log 23556 12692 Not Found: /covers/2.jpg
+WARNING 2023-09-05 14:41:23,694 log 23556 16448 Not Found: /covers/6.jpg
+WARNING 2023-09-05 14:41:23,701 log 23556 26280 Not Found: /covers/7.jpg
+WARNING 2023-09-05 14:41:23,703 log 23556 11156 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 14:42:45,837 log 23556 11156 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 14:43:08,244 log 23556 11156 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 14:44:22,389 log 23556 11156 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 14:48:25,687 log 23556 26280 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 14:50:03,608 log 23556 26280 Not Found: /images/card_image2.svg
+INFO 2023-09-05 16:25:59,676 autoreload 20912 24368 Watching for file changes with StatReloader
+WARNING 2023-09-05 16:26:02,209 log 20912 2260 Not Found: /images/card_image2.svg
+INFO 2023-09-05 16:27:26,856 autoreload 20912 24368 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:27:27,426 autoreload 19224 11728 Watching for file changes with StatReloader
+INFO 2023-09-05 16:27:29,699 autoreload 19224 11728 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:27:30,199 autoreload 15600 19584 Watching for file changes with StatReloader
+INFO 2023-09-05 16:27:32,472 autoreload 15600 19584 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:27:32,963 autoreload 27636 16224 Watching for file changes with StatReloader
+INFO 2023-09-05 16:27:35,293 autoreload 27636 16224 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:27:35,825 autoreload 23836 25312 Watching for file changes with StatReloader
+INFO 2023-09-05 16:27:44,254 autoreload 23836 25312 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:27:44,761 autoreload 20348 1200 Watching for file changes with StatReloader
+INFO 2023-09-05 16:27:46,013 autoreload 20348 1200 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:27:46,543 autoreload 25212 11800 Watching for file changes with StatReloader
+INFO 2023-09-05 16:27:49,859 autoreload 25212 11800 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:27:50,403 autoreload 11636 7776 Watching for file changes with StatReloader
+INFO 2023-09-05 16:27:56,982 autoreload 11636 7776 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:27:57,542 autoreload 25160 1204 Watching for file changes with StatReloader
+INFO 2023-09-05 16:28:07,151 autoreload 25160 1204 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:28:07,731 autoreload 15016 9168 Watching for file changes with StatReloader
+INFO 2023-09-05 16:28:10,007 autoreload 15016 9168 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:28:10,583 autoreload 10100 7884 Watching for file changes with StatReloader
+INFO 2023-09-05 16:28:42,843 autoreload 10100 7884 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:28:43,402 autoreload 10476 17060 Watching for file changes with StatReloader
+INFO 2023-09-05 16:28:45,851 autoreload 10476 17060 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:28:46,381 autoreload 20772 13896 Watching for file changes with StatReloader
+INFO 2023-09-05 16:28:51,857 autoreload 20772 13896 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:28:52,441 autoreload 1356 6432 Watching for file changes with StatReloader
+INFO 2023-09-05 16:28:53,717 autoreload 1356 6432 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:28:54,268 autoreload 17280 16972 Watching for file changes with StatReloader
+INFO 2023-09-05 16:28:57,734 autoreload 17280 16972 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:28:58,279 autoreload 24256 23148 Watching for file changes with StatReloader
+INFO 2023-09-05 16:28:59,558 autoreload 24256 23148 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:00,096 autoreload 24784 20304 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:01,533 autoreload 24784 20304 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:02,088 autoreload 13224 19656 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:03,513 autoreload 13224 19656 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:04,133 autoreload 21932 13556 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:13,932 autoreload 21932 13556 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:14,467 autoreload 20992 26224 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:17,946 autoreload 20992 26224 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:18,521 autoreload 6068 18716 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:23,005 autoreload 6068 18716 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:23,576 autoreload 9728 26380 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:24,968 autoreload 9728 26380 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:25,522 autoreload 13104 24644 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:28,982 autoreload 13104 24644 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:29,525 autoreload 22244 20684 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:30,919 autoreload 22244 20684 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:31,467 autoreload 13836 3036 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:32,736 autoreload 13836 3036 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:33,295 autoreload 17476 1996 Watching for file changes with StatReloader
+INFO 2023-09-05 16:29:37,770 autoreload 17476 1996 C:\Users\Lenovo\Desktop\Music_player\music_player\account\models.py changed, reloading.
+INFO 2023-09-05 16:29:38,357 autoreload 25272 3660 Watching for file changes with StatReloader
+INFO 2023-09-05 16:32:52,153 autoreload 25272 3660 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:32:52,736 autoreload 19760 25068 Watching for file changes with StatReloader
+INFO 2023-09-05 16:32:59,249 autoreload 19760 25068 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:32:59,787 autoreload 18548 17912 Watching for file changes with StatReloader
+INFO 2023-09-05 16:33:03,336 autoreload 18548 17912 C:\Users\Lenovo\Desktop\Music_player\music_player\music\models.py changed, reloading.
+INFO 2023-09-05 16:33:03,962 autoreload 22004 26180 Watching for file changes with StatReloader
+ERROR 2023-09-05 16:41:46,070 log 22004 2944 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'cover' attribute has no file associated with it.
+WARNING 2023-09-05 16:48:41,854 log 22004 4848 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 17:13:31,564 log 22004 5180 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 18:36:34,172 log 22004 22220 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 18:37:06,082 log 22004 22220 Not Found: /images/card_image2.svg
+WARNING 2023-09-05 18:37:17,757 log 22004 22220 Not Found: /images/card_image2.svg
