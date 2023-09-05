@@ -1,0 +1,13 @@
+.my_card{
+    background-color: #e8e6e64e;
+    border-radius: 10px;
+}
+
+.image_part .payment_info{
+    width: 90%;
+    height: 90%;
+    background-color: #ebe9e94e;
+    color: #d1ff05;
+    /* z-index: 3; */
+
+}
